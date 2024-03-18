@@ -1,0 +1,144 @@
+ /*<!--  My UX Skills section coded using CSS flex ------------------------------------------------------------------------------------------------>*/
+
+.flexContainer {
+    display: flex;
+}
+
+body {
+    background-color: #202020;
+    padding: 50px;
+ }
+
+.mySkills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flexContainer {
+    margin: 5px;
+    padding: 10px;
+    background-color: #202020;
+    border: 10px;
+}
+
+.flexContainer img {
+    height: 170px;
+    margin-left: -30px;
+}
+
+.flexContainer h3 {
+    margin-top: 50px;
+    margin-right: 40px;
+    font-size: 30px;
+    color: #f0f0f0;
+}
+
+.mySkills, .myWork {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway'; 
+    color: #f0f0f0;
+}
+
+.flexContainer p {
+    font-size: 18px;
+    color: #f0f0f0;
+    margin-right: 25px;
+    margin-top: 40px;
+}
+
+p {
+    font-family: 'Raleway'; 
+    font-weight: 200;
+}
+
+/* <!-- My Work Section Constructed using CSS Grid ----------------------------------------------------------------------------------------------->*/
+
+.workGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 130px;
+    grid-row-gap: 0px;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+.dreamCenter {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.fIsForFood {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.myWork img {
+    max-width: 150%; 
+    width: 350px; 
+    height: auto; 
+    border: 3px solid white;
+    border-radius: 2px;
+}
+
+.myWork {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    font-size: 18px;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 500;
+}
+
+button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 10px 24px;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif; 
+  }
+
+.viewAllProjects {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 10px 24px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+.viewAll {
+    margin: 40px;
+}
+
+.projHeading {
+    padding-bottom: 50px;
+}
+
+/* <!--Mobile Media Query -----------------------------------------------------------------------------------------------------------------------> */
+
+@media only screen and (max-width: 600) {
+    grid-template-rows: 1fr, 1fr; 
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "dreamCenter"
+        "fIsForFood"
+    ;
+}
+
+
+
