@@ -1,4 +1,106 @@
- /*<!--  My UX Skills section coded using CSS flex ------------------------------------------------------------------------------------------------>*/
+/*HEADER----------------------------------->*/
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    color: white;
+    margin-right: 35px;
+}
+.logo {
+    padding: 1%;
+    text-align: center;
+    position: fixed;
+}
+.logo img {
+    width: 200px;
+    transform: rotate(360deg);
+    animation: spinme 100s infinite;
+}
+    @keyframes spinme {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(720deg);
+        }
+      }
+
+nav {
+    width: 60%;
+    padding: 2%;
+}
+nav ul {
+    width: 100%;
+    margin-left: 405px;
+}
+/*HERO SPACE------------------------------->*/
+/*.heroImg {
+    height: 600px;
+    padding: 25px;
+}*/
+.content {
+    margin-left: 5%;
+}
+.heroImg {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+.heroImg-inner {
+    position: relative;
+    top: 50%; 
+    left: 30%;
+    transform: translate(-50%, -50%);
+    /* text-align: 50px; */
+    color: white;
+    padding: 20px;
+    width: 30%;
+}
+li {
+    font-family: 'Raleway', sans-serif; 
+    list-style-type: none;
+    letter-spacing: .2rem;
+}
+h3 {
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 350;
+    letter-spacing: 1px;
+}
+button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 10px 24px;
+    font-size: 15px;
+  }
+
+#Download-Resume {
+    margin-top: 20px;
+
+}
+
+/*FOOTER----------------------------------->*/
+footer {
+    position: relative;
+    left:0;
+    bottom: 0;
+    width: 100%;
+    background-color: #373738;
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+
+/*<!--  My UX Skills section coded using CSS flex ------------------------------------------------------------------------------------------------>*/
 
 .flexContainer {
     display: flex;
@@ -6,20 +108,21 @@
 
 body {
     background-color: #202020;
-    padding: 50px;
+    padding: 0px;
  }
 
 .mySkills {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 400px;
+    margin-left: 60px;
+    margin-right: 60px;
 }
 
 .flexContainer {
-    margin: 5px;
-    padding: 10px;
+    margin: 2px;
     background-color: #202020;
-    border: 10px;
 }
 
 .flexContainer img {
@@ -132,13 +235,35 @@ button {
 /* <!--Mobile Media Query -----------------------------------------------------------------------------------------------------------------------> */
 
 @media only screen and (max-width: 600) {
+   .workGrid {
     grid-template-rows: 1fr, 1fr; 
     grid-template-columns: 1fr;
     grid-template-areas:
         "dreamCenter"
         "fIsForFood"
     ;
+   }
 }
 
+/* Change header nav color on hover and click*/
 
+nav ul li:hover,
+        nav ul li.active {
+            color: grey;
+}
+
+nav ul li:active {
+    color: black;
+}
+
+/* Change footer nav color on hover and click*/
+
+footer ul li:hover,
+        nav ul li.active {
+            color: grey;
+}
+
+footer ul li:active {
+    color: black;
+}
 
