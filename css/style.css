@@ -352,15 +352,17 @@ footer ul li:active {
     padding-top: 20px;
     margin: 0;
     display: inline-block; 
+    color: #fff;
+    text-decoration: none;
 }
 .footer-nav li {
     display: inline;
     margin: 0 10px;
 }
-.footer-nav a {
+/*.footer-nav a {
     color: #fff;
     text-decoration: none;
-}
+}*/
 .copyright {
     color: #666;
     font-size: 0.8rem;
