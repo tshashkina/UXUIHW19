@@ -17,7 +17,8 @@ body {
     position: fixed;
 }
 .logo img {
-    width: 200px;
+    width: 150px;
+    height: 150px;
     transform: rotate(360deg);
     animation: spinme 100s infinite;
 }
