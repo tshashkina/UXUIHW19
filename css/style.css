@@ -37,8 +37,10 @@ nav {
 nav ul {
     width: 100%;
     margin-left: 405px;
+    position: fixed;
 }
 /*HERO SPACE------------------------------->*/
+
 /*.heroImg {
     height: 600px;
     padding: 25px;
@@ -86,18 +88,6 @@ button {
 #Download-Resume {
     margin-top: 20px;
 
-}
-
-/*FOOTER----------------------------------->*/
-footer {
-    position: relative;
-    left:0;
-    bottom: 0;
-    width: 100%;
-    background-color: #373738;
-    padding: 30px;
-    text-align: center;
-    color: white;
 }
 
 /*<!--  My UX Skills section coded using CSS flex ------------------------------------------------------------------------------------------------>*/
@@ -265,5 +255,113 @@ footer ul li:hover,
 
 footer ul li:active {
     color: black;
+}
+
+/*CONTACT----------------------------------------------------------------------->*/
+
+.connect-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+.contact-details, .socials {
+    margin: 10px 0;
+}
+.contact-details {
+    text-align: center; 
+    color: #ffffff;
+}
+.connectHeading {
+    color: #ffffff; 
+    font-family: 'Raleway', sans-serif; 
+}
+.social-icons img {
+    margin: 0 10px;
+}
+.socials h3 {
+    color: #ffffff;
+    text-align: center;
+}
+
+.socials img {
+    margin-right: 15px; 
+}
+
+/*.connectHeading {
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+.myContact, .Socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway'; 
+    color: #f0f0f0;
+}
+
+.myContact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 130px;
+    grid-row-gap: 0px;
+    align-content: center;
+    justify-content: center;
+}
+
+.contactDetail {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.Socials {
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+}
+
+.Socials img {
+    margin-right: 15px; 
+}
+
+.myContact {
+    text-align: center; 
+}
+
+.getInTouch, .Socials {
+    display: inline-block; 
+    vertical-align: top; 
+    margin: 0 10px; 
+}*/
+
+/*FOOTER----------------------------------->*/
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    background-color: #333; 
+}
+.footer-nav {
+    list-style: none;
+    padding-top: 20px;
+    margin: 0;
+    display: inline-block; 
+}
+.footer-nav li {
+    display: inline;
+    margin: 0 10px;
+}
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+}
+.copyright {
+    color: #666;
+    font-size: 0.8rem;
 }
 
